@@ -95,6 +95,32 @@
       "binary16",
       "float32",
       "float64"
+    ],
+    "alternative_submissions": [
+      {
+        "matrix": "Q",
+        "partition": "cols01",
+        "range": [
+          0,
+          2
+        ],
+        "axis": 1,
+        "layout": "RC",
+        "version": 12,
+        "source": "column_a"
+      },
+      {
+        "matrix": "Q",
+        "partition": "col2",
+        "range": [
+          2,
+          3
+        ],
+        "axis": 1,
+        "layout": "CR",
+        "version": 12,
+        "source": "column_b"
+      }
     ]
   },
   "tensors": {
@@ -350,6 +376,171 @@
           -2,
           -1,
           1
+        ]
+      ]
+    },
+    "column_a_gradient": {
+      "dtype": "float32",
+      "shape": [
+        7,
+        2
+      ],
+      "values": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4.001
+        ],
+        [
+          5,
+          4.999
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          7.003
+        ]
+      ]
+    },
+    "column_b_gradient": {
+      "dtype": "float32",
+      "shape": [
+        1,
+        7
+      ],
+      "values": [
+        [
+          0.01,
+          0.021,
+          0.028,
+          0.041,
+          0.052,
+          0.069,
+          0.077
+        ]
+      ]
+    },
+    "column_a_momentum": {
+      "dtype": "float32",
+      "shape": [
+        7,
+        2
+      ],
+      "values": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "column_b_momentum": {
+      "dtype": "float32",
+      "shape": [
+        1,
+        7
+      ],
+      "values": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "column_a_weight": {
+      "dtype": "float32",
+      "shape": [
+        7,
+        2
+      ],
+      "values": [
+        [
+          0.5,
+          0
+        ],
+        [
+          0.5,
+          0
+        ],
+        [
+          0.5,
+          0
+        ],
+        [
+          0.25,
+          0.25
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0.7,
+          0.7
+        ],
+        [
+          3,
+          -1
+        ]
+      ]
+    },
+    "column_b_weight": {
+      "dtype": "float32",
+      "shape": [
+        1,
+        7
+      ],
+      "values": [
+        [
+          -0.3,
+          -0.3,
+          -0.3,
+          0.25,
+          1,
+          0.7,
+          -2
         ]
       ]
     }
