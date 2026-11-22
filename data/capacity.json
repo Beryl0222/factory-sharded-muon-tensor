@@ -1,0 +1,10 @@
+{
+  "matrix": [
+    18432,
+    432
+  ],
+  "partitions": 23,
+  "iterations": 5,
+  "max_scratch_bytes": 6291456,
+  "seed": 852
+}

@@ -1,0 +1,357 @@
+{
+  "records": {
+    "matrices": {
+      "Q": {
+        "shape": [
+          7,
+          3
+        ],
+        "generation": 12,
+        "error": 0.0001,
+        "max_norm": 2.3
+      },
+      "R": {
+        "shape": [
+          2,
+          3
+        ],
+        "generation": 44,
+        "error": 0.001,
+        "max_norm": 1.8
+      }
+    },
+    "iterations": 4,
+    "abc": [
+      3.4445,
+      -4.775,
+      2.0315
+    ],
+    "beta": 0.9,
+    "lr": 0.004,
+    "submissions": [
+      {
+        "matrix": "Q",
+        "partition": "q0",
+        "range": [
+          0,
+          3
+        ],
+        "axis": 0,
+        "layout": "RC",
+        "version": 12,
+        "source": "a"
+      },
+      {
+        "matrix": "Q",
+        "partition": "q1",
+        "range": [
+          3,
+          6
+        ],
+        "axis": 0,
+        "layout": "CR",
+        "version": 11,
+        "source": "b"
+      },
+      {
+        "matrix": "Q",
+        "partition": "q2",
+        "range": [
+          6,
+          7
+        ],
+        "axis": 0,
+        "layout": "CR",
+        "version": 12,
+        "source": "c"
+      },
+      {
+        "matrix": "R",
+        "partition": "r0",
+        "range": [
+          0,
+          2
+        ],
+        "axis": 0,
+        "layout": "RC",
+        "version": 44,
+        "source": "d"
+      },
+      {
+        "matrix": "Q",
+        "partition": "q1",
+        "range": [
+          3,
+          6
+        ],
+        "axis": 0,
+        "layout": "CR",
+        "version": 12,
+        "source": "b"
+      }
+    ],
+    "step": "train-9",
+    "precision_modes": [
+      "binary16",
+      "float32",
+      "float64"
+    ]
+  },
+  "tensors": {
+    "a_gradient": {
+      "dtype": "float32",
+      "shape": [
+        3,
+        3
+      ],
+      "values": [
+        [
+          1,
+          1,
+          0.01
+        ],
+        [
+          2,
+          2,
+          0.021
+        ],
+        [
+          3,
+          3,
+          0.028
+        ]
+      ]
+    },
+    "a_momentum": {
+      "dtype": "float32",
+      "shape": [
+        3,
+        3
+      ],
+      "values": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "a_weight": {
+      "dtype": "float32",
+      "shape": [
+        3,
+        3
+      ],
+      "values": [
+        [
+          0.5,
+          0,
+          -0.3
+        ],
+        [
+          0.5,
+          0,
+          -0.3
+        ],
+        [
+          0.5,
+          0,
+          -0.3
+        ]
+      ]
+    },
+    "b_gradient": {
+      "dtype": "float32",
+      "shape": [
+        3,
+        3
+      ],
+      "values": [
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          4.001,
+          4.999,
+          6
+        ],
+        [
+          0.041,
+          0.052,
+          0.069
+        ]
+      ]
+    },
+    "b_momentum": {
+      "dtype": "float32",
+      "shape": [
+        3,
+        3
+      ],
+      "values": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "b_weight": {
+      "dtype": "float32",
+      "shape": [
+        3,
+        3
+      ],
+      "values": [
+        [
+          0.25,
+          1,
+          0.7
+        ],
+        [
+          0.25,
+          1,
+          0.7
+        ],
+        [
+          0.25,
+          1,
+          0.7
+        ]
+      ]
+    },
+    "c_gradient": {
+      "dtype": "float32",
+      "shape": [
+        3,
+        1
+      ],
+      "values": [
+        [
+          7
+        ],
+        [
+          7.003
+        ],
+        [
+          0.077
+        ]
+      ]
+    },
+    "c_momentum": {
+      "dtype": "float32",
+      "shape": [
+        3,
+        1
+      ],
+      "values": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ]
+    },
+    "c_weight": {
+      "dtype": "float32",
+      "shape": [
+        3,
+        1
+      ],
+      "values": [
+        [
+          3
+        ],
+        [
+          -1
+        ],
+        [
+          -2
+        ]
+      ]
+    },
+    "d_gradient": {
+      "dtype": "float32",
+      "shape": [
+        2,
+        3
+      ],
+      "values": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "d_momentum": {
+      "dtype": "float32",
+      "shape": [
+        2,
+        3
+      ],
+      "values": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "d_weight": {
+      "dtype": "float32",
+      "shape": [
+        2,
+        3
+      ],
+      "values": [
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          -2,
+          -1,
+          1
+        ]
+      ]
+    }
+  }
+}
